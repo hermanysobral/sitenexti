@@ -1,0 +1,82 @@
+.team{
+    margin: 100px auto 100px;
+    display: flex;
+    
+ 
+ }
+ .team .card
+ {
+   position: relative;
+   width: 350px;
+   margin: 20px;
+   background: #0081bc;
+   padding: 20px;
+   box-sizing: border-box;
+   text-align: center;
+   box-shadow: 0 10px 40px rgba(0,0,0,.5);
+   overflow: hidden;
+ }
+ .team .card .layer
+ {
+   position: absolute;
+   top: calc(100% - 2px);
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: linear-gradient(#0081bc, #ffc500);
+   z-index: 1;
+   transition: 0.5s;
+ }
+ .team .card:hover .layer
+ {
+   top: 0;
+ }
+ .team .card .conteudo
+ {
+   position: relative;
+   z-index: 2;
+ 
+ }
+ .team .card .conteudo p
+ {
+   font-size: 18px;
+   line-height: 24px;
+   color: #fff;
+ }
+ .team .card .conteudo .image
+ {
+   width: 100px;
+   height: 100px;
+   margin: 0 auto;
+   border-radius: 50%;
+   overflow: hidden;
+   border: 4px solid #fff;
+   box-shadow:  0 10px 20px rgba(0,0,0,.5);
+ 
+ 
+ }
+ .team .card .conteudo .image img 
+ {
+     width: 100%;
+     height: 100%;
+ }
+ .team .card .conteudo .detalhes h2
+ {
+   font-size: 20px;
+   color: #fff;
+ 
+ }
+ 
+ ,.team .card .conteudo .detalhes h2 span
+ {
+   color: #03a9f4;
+   font-size: 14px;
+   transition: 0.5s;
+ 
+ 
+ }
+ .team .card:hover .conteudo .detalhes h2 span
+ {
+   color: #fff;
+ 
+ }
